@@ -1,0 +1,56 @@
+
+.register-container{
+    max-width:700px;
+    margin:50px auto;
+    padding:30px;
+}
+
+.register-container h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.role-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.role-buttons button{
+    padding:12px 25px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    background:#ddd;
+}
+
+.role-buttons .active{
+    background:#980000;
+    color:#fff;
+}
+
+.register-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.register-form button{
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#980000;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}

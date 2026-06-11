@@ -1,0 +1,147 @@
+/* PAGE */
+
+.worker-details {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 40px 20px;
+}
+
+/* CONTAINER */
+
+.worker-container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 450px 100px 1fr;
+  gap: 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* MAIN IMAGE */
+
+.main-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* GALLERY */
+
+.work-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work-gallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.active-thumb {
+  border: 2px solid #000;
+}
+
+/* INFO */
+
+.worker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.worker-info h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.service {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.worker-info p {
+  color: #555;
+  margin: 0;
+}
+
+/* ABOUT */
+
+.about-box {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.about-box h3 {
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  line-height: 1.7;
+}
+
+/* BOOKING */
+
+.booking-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-box input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.booking-box button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-box button:hover {
+  opacity: 0.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .worker-container {
+    grid-template-columns: 1fr;
+  }
+
+  .work-gallery {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .main-image {
+    height: 300px;
+  }
+
+  .worker-info h1 {
+    font-size: 1.8rem;
+  }
+}

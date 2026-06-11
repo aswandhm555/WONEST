@@ -1,0 +1,185 @@
+.home{
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:0 20px;
+
+    background:linear-gradient(
+        135deg,
+        #0036c0,
+        #030b1f
+    );
+
+    color:#fff;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#ffc800;
+    color:#000000;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#00025c;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 70px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    padding:40px 20px;
+    border-radius:15px;
+    background:#f8f8f8;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    font-size:1.3rem;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works{
+    padding:80px 70px;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+.how-it-works h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.step{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+}
+
+.step span{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:auto;
+    margin-bottom:20px;
+
+    border-radius:50%;
+    background:#980000;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta h2{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:25px;
+    font-size:1.1rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.7rem;
+    }
+
+    .services,
+    .how-it-works{
+        padding:60px 20px;
+    }
+
+}

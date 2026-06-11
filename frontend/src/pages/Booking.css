@@ -1,0 +1,117 @@
+.booking-dashboard {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.booking-dashboard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.booking-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.booking-tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.booking-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.booking-card hr {
+  margin: 20px 0;
+}
+
+.booking-card h4 {
+  margin-bottom: 10px;
+}
+
+.booking-card select,
+.booking-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.booking-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.booking-card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.booking-card button:hover {
+  background: #0056b3;
+}
+
+.booking-card button:last-child {
+  margin-top: 5px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .booking-dashboard {
+    padding: 15px;
+  }
+
+  .booking-tabs {
+    flex-direction: column;
+  }
+
+  .booking-tabs button {
+    width: 100%;
+  }
+}
